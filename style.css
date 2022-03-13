@@ -1,0 +1,329 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+h1,
+h2,
+p{
+    margin: 1.6rem 0;
+}
+
+p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+img{
+    width: 100%;
+    height: 25rem;
+    border-radius: 25px;
+}
+h2{
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+section{
+    padding: 50px 0;
+}
+
+/* header sectioon */
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+
+.logo h1{
+    font-size: 3.2rem;
+    color: azure;
+    margin: 0;
+}
+
+nav{
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu{
+    display: none;
+}
+ nav ul {
+     list-style-type: none;
+ }
+
+ nav ul li {
+    display: inline-block;
+    margin-left: 2.5rem;
+ }
+ nav ul li a:hover{
+     color: rgba(0, 255, 255, 0.884);
+     transition: 0.5s ease-in-out;
+ }
+ .header-content{
+     width: 50%;
+     position: relative;
+     top: 16%;
+     left: 8%;
+ }
+
+ 
+ /* our menu */
+
+ #our-list{
+     margin-top: 0.1rem;
+     background-color: #222;
+     color: whitesmoke;
+     opacity: 1;
+     text-align: center;
+     transition: 0.5s;
+ }
+
+ .list-left,
+  .list-middle,
+   .list-right
+    {
+    border: 1px solid whitesmoke;
+    border-radius: 25px;
+    flex-basis: 30%;
+ }
+
+    /* Most Popular Food */
+#food{
+    margin-top: 0.1rem;
+    background-color: #222;
+    color: whitesmoke;
+}
+.food-left,
+.food-right{
+    flex-basis: 50%;
+}
+
+.food-right img{
+    padding: 0px 4px;
+}
+
+/* our Gallery */
+ #gallery{
+    margin-top: 0.1rem;
+     background-color: #222;
+     color: whitesmoke;
+     text-align: center;
+ }
+
+  .gallery-left,
+  .gallery-middle,
+  .gallery-right{
+      flex-basis: 30%;
+  }
+
+    /* Customer Review  */
+    #review{
+        background-color: #222;
+        color: whitesmoke;
+    }
+    /* customer review */
+    #review .test-left, .test-right{
+        background-color: #505050;
+        padding: 4rem 8rem;
+        margin: 0.8rem;
+
+    }
+    .test-left,
+    .test-right{
+        flex-basis: 50%;
+        border: 1px solid whitesmoke;
+    }
+
+    #review .image{
+        height: 80px;
+        width: 80px;
+    }
+    #review img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    #review .icon i{
+        padding: 0.1rem;
+        font-size: 1.2rem;
+    }
+
+    /* About */
+    #about{
+        background-color: #222;
+        color: whitesmoke;
+    }
+    #about .row{
+        justify-content: center;
+    }
+    #about form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;              
+        font-size: large;
+        align-items: center;
+    }
+    form {
+        margin: 2.4rem 0;
+    }
+    
+    input {
+        font-size: 1.8rem;
+    }
+    
+    input[type=text],
+    input[type=email] {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 1.2rem 0;
+        display: block;
+        border: 1px solid #ccc;
+    }
+    
+    input[type=submit] {
+        width: 50%;
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    
+    #about form input{
+        width: 50%;
+        padding: 10px;
+    }
+    #about textarea{
+        width: 50%;
+        height: 150px;
+        padding: 12px 20px;
+        border: 1px solid #ccc;
+        font-size: 1.3rem;
+        resize: none;
+        margin: 1.2rem 0;
+    }
+    .about-left,
+    .about-right{
+        flex-basis: 50%;
+    }
+
+    #about .icon i{
+        padding: 1rem;
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    /* footer */
+    .footer{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        background-color: rgba(31, 4, 4, 0.973);
+        color: white;
+        height: 100%;
+        padding: 0.8rem;
+    }
+    .content{
+        margin: 20px;
+        height: 50px;
+    }
+/* media query */
+@media only screen and (max-width:768px) {
+    nav{
+        flex-direction: column;
+        position: relative;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 32px;
+    }
+   
+    nav ul{
+        background: whitesmoke;
+        display: none;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: block;
+        padding: 2% 0;
+    }
+
+    .showmenu {
+        display: block;
+    }
+    nav ul li a {
+        color: black;
+    }
+     /* our menu */
+    .list-left,
+    .list-middle,
+     .list-right{
+         margin: 0.8rem;
+     }
+
+     /* Most popular food */
+     
+    .food-right .row img{
+        margin: 0.8rem;
+    }
+    /* Gallery */
+    #gallery .row img{
+        margin: 0.8rem;
+    }
+    /* header content */
+    .header-content{
+        width: 100%;
+        top:16%;
+        left:0;
+        text-align: center;
+        padding:0 8px;
+    }
+
+    #about form input,
+    #about form textarea{
+        width: 100%;
+    }
+}
+
+
+
